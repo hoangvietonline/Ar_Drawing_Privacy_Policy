@@ -1,0 +1,45 @@
+:root{--ink:#18312d;--body:#3f514d;--muted:#60716b;--green:#166454;--paper:#fff;--canvas:#f5f7f2;--line:#dbe3db;--soft:#eaf1e9}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:24px}
+body{margin:0;background:var(--canvas);color:var(--body);font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;font-size:16px;line-height:1.75;-webkit-font-smoothing:antialiased}
+a{color:var(--green);text-underline-offset:4px;text-decoration-thickness:1px;overflow-wrap:anywhere}
+a:hover{text-decoration-thickness:2px}
+a:focus-visible{outline:3px solid var(--green);outline-offset:5px;border-radius:2px}
+.skip-link{position:absolute;top:-80px;left:16px;padding:10px 16px;background:var(--paper);z-index:2}
+.skip-link:focus{top:12px}
+.site-header{max-width:1060px;margin:auto;padding:30px 32px;display:flex;align-items:center;justify-content:space-between;gap:24px;border-bottom:1px solid var(--line)}
+.brand{display:flex;align-items:center;gap:12px;color:var(--ink);line-height:1.4}
+.brand-mark{display:grid;place-items:center;width:44px;height:44px;background:var(--green);color:#fff;font-size:30px;border-radius:14px;flex:none}
+.brand strong{display:block;font-size:15px;font-weight:650}
+.brand span:not(.brand-mark){display:block;font-size:12px;color:var(--muted);margin-top:3px}
+.contact-link{font-size:14px;white-space:nowrap}
+main{max-width:820px;margin:0 auto;padding:0 32px 56px}
+.hero{padding:66px 0 30px}
+.eyebrow{text-transform:uppercase;letter-spacing:.14em;color:var(--green);font-size:11px;font-weight:750;margin:0 0 14px}
+h1{font-size:clamp(38px,7vw,58px);line-height:1.12;letter-spacing:-.045em;font-weight:650;color:var(--ink);margin:0 0 20px}
+.lead{font-size:19px;line-height:1.6;max-width:620px;margin:0 0 20px}
+.updated{font-size:13px;color:var(--muted);margin:0}
+.overview{background:var(--soft);border:1px solid #d5e2d3;border-radius:18px;padding:24px 28px;margin-bottom:26px}
+.overview h2{font-size:17px;margin:0 0 10px}
+.overview ul{padding-left:21px;margin:0}
+.overview li{padding-left:3px;margin:5px 0}
+.overview p{font-size:13px;color:var(--muted);margin:14px 0 0}
+.contents{display:flex;flex-wrap:wrap;gap:9px 18px;padding:0 0 28px;font-size:13px}
+article{background:var(--paper);border:1px solid var(--line);border-radius:20px;padding:4px 34px 32px}
+section{padding-top:30px;scroll-margin-top:20px}
+section+section{margin-top:26px;border-top:1px solid var(--line)}
+h2{font-size:21px;font-weight:650;letter-spacing:-.025em;line-height:1.45;color:var(--ink);margin:0 0 16px}
+.section-number{display:block;font-size:11px;letter-spacing:.12em;color:var(--green);margin-bottom:8px}
+h3{font-size:16px;color:var(--ink);line-height:1.5;margin:24px 0 8px;font-weight:650}
+p{margin:0 0 15px}
+section p:last-child{margin-bottom:0}
+ul{padding-left:23px;margin:0 0 16px}
+li{margin:0 0 12px;padding-left:2px}
+strong{color:var(--ink);font-weight:650}
+code{font-size:.83em;background:var(--canvas);padding:3px 5px;border-radius:4px;overflow-wrap:anywhere}
+.contact-card{background:var(--soft);padding:25px;border-radius:12px;border-top:0}
+footer{max-width:820px;margin:0 auto;padding:0 32px 38px;display:flex;justify-content:space-between;gap:20px;color:var(--muted);font-size:12px}
+footer p{margin:0}
+@media(max-width:540px){.site-header{padding:22px 20px;gap:14px}.brand strong{font-size:13px}.brand-mark{height:38px;width:38px}.contact-link{font-size:12px}main{padding:0 18px 36px}.hero{padding-top:44px}.lead{font-size:17px}.overview{padding:21px}.contents{gap:8px 16px}article{padding:0 21px 24px;border-radius:16px}h2{font-size:20px}.contact-card{padding:20px;margin-left:-5px;margin-right:-5px}footer{padding:0 20px 28px;flex-wrap:wrap}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+@media print{body{background:#fff;color:#111;font-size:11pt}.site-header,.skip-link,.contents,footer{display:none}main{max-width:none;padding:0}.hero{padding:0 0 20px}h1{font-size:30pt}.lead{font-size:12pt}.overview{background:none;border:1px solid #aaa}article{border:0;padding:0}section{padding-top:18px}h2,h3{break-after:avoid}a{color:inherit}p,li{orphans:3;widows:3}.contact-card{background:none;border:1px solid #aaa}}
